@@ -1,0 +1,10 @@
+15:50:17 **** Build of configuration Debug for project register_toggle ****
+make -j12 all 
+arm-none-eabi-size   register_toggle.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1012	     12	   1572	   2596	    a24	register_toggle.elf
+Finished building: default.size.stdout
+ 
+
+15:50:18 Build Finished. 0 errors, 0 warnings. (took 201ms)
+

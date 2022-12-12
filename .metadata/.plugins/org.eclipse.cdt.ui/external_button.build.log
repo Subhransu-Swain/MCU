@@ -1,0 +1,10 @@
+11:46:35 **** Build of configuration Debug for project external_button ****
+make -j12 all 
+arm-none-eabi-size   external_button.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6076	     20	   1572	   7668	   1df4	external_button.elf
+Finished building: default.size.stdout
+ 
+
+11:46:35 Build Finished. 0 errors, 0 warnings. (took 210ms)
+

@@ -1,0 +1,10 @@
+11:46:29 **** Build of configuration Debug for project 4x3_keypad ****
+make -j12 all 
+arm-none-eabi-size   4x3_keypad.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1532	     12	   1572	   3116	    c2c	4x3_keypad.elf
+Finished building: default.size.stdout
+ 
+
+11:46:29 Build Finished. 0 errors, 0 warnings. (took 201ms)
+

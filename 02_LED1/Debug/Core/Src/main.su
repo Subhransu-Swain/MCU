@@ -1,0 +1,4 @@
+../Core/Src/main.c:2:6:motor_init	4	static
+../Core/Src/main.c:7:7:sw_init	4	static
+../Core/Src/main.c:12:7:operation	4	static
+../Core/Src/main.c:24:6:main	8	static

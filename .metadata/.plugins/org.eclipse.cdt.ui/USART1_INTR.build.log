@@ -1,0 +1,10 @@
+12:40:36 **** Incremental Build of configuration Debug for project USART1_INTR ****
+make -j12 all 
+arm-none-eabi-size   USART1_INTR.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11188	     24	   1696	  12908	   326c	USART1_INTR.elf
+Finished building: default.size.stdout
+ 
+
+12:40:37 Build Finished. 0 errors, 0 warnings. (took 163ms)
+

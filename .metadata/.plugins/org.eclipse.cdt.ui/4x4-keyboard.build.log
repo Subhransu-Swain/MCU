@@ -1,0 +1,10 @@
+15:25:47 **** Build of configuration Debug for project 4x4-keyboard ****
+make -j12 all 
+arm-none-eabi-size   4x4-keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1060	     12	   1572	   2644	    a54	4x4-keyboard.elf
+Finished building: default.size.stdout
+ 
+
+15:25:47 Build Finished. 0 errors, 0 warnings. (took 160ms)
+

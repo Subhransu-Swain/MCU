@@ -1,0 +1,10 @@
+15:53:14 **** Incremental Build of configuration Debug for project TIMER_using_resisters ****
+make -j12 all 
+arm-none-eabi-size   TIMER_using_resisters.elf 
+   text	   data	    bss	    dec	    hex	filename
+    888	      8	   1568	   2464	    9a0	TIMER_using_resisters.elf
+Finished building: default.size.stdout
+ 
+
+15:53:14 Build Finished. 0 errors, 0 warnings. (took 212ms)
+

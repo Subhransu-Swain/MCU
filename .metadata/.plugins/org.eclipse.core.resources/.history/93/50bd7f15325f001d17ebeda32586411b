@@ -1,0 +1,38 @@
+#include "stm32f4xx.h"
+void motor_init()
+{
+	RCC->AHB1ENR |=0x1;
+	GPIOA->MODER |=0x400;
+}
+
+void sw_init()
+{
+	RCC->AHB1ENR |=0x4;
+	GPIOA->MODER |=0x0;
+}
+int main()
+{
+
+	RCC->AHB1ENR |=1;
+	GPIOA->MODER |=0x400;
+	while(1)
+	{
+		if(GPIOC->IDR & 2000)
+		{
+			GPIOA->BSRR |=0x200000;
+			delay(500);
+		}
+		else
+		{
+			GPIOA->BSRR|=0x20;
+			delay(500);
+		}
+////		GPIOA->BSRR |=0x20;
+//		GPIOA->ODR |=LED;
+//		delay(1000);
+////		GPIOA->BSRR |=0x200000;
+//		GPIOA->ODR &=~LED;
+//		delay(1000);
+
+	}
+}

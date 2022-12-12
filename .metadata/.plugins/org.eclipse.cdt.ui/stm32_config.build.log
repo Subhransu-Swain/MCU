@@ -1,0 +1,58 @@
+09:33:27 **** Incremental Build of configuration Debug for project stm32_config ****
+make -j12 all 
+arm-none-eabi-gcc "../driver/src/gpio_config.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DSTM32F411RETx -c -I../Inc -I"C:/Users/PHY202209EF10/STM32CubeIDE/workspace_1.10.1/stm32_config/driver/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"driver/src/gpio_config.d" -MT"driver/src/gpio_config.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "driver/src/gpio_config.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DSTM32F411RETx -c -I../Inc -I"C:/Users/PHY202209EF10/STM32CubeIDE/workspace_1.10.1/stm32_config/driver/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../driver/src/gpio_config.c: In function 'gpio_config':
+../driver/src/gpio_config.c:11:2: error: unknown type name 'GPIO_Handle_t'
+   11 |  GPIO_Handle_t GpioLed;
+      |  ^~~~~~~~~~~~~
+../driver/src/gpio_config.c:13:10: error: request for member 'pGPIOx' in something not a structure or union
+   13 |   GpioLed.pGPIOx = GPIOA;
+      |          ^
+../driver/src/gpio_config.c:14:10: error: request for member 'GPIO_PinConfig' in something not a structure or union
+   14 |   GpioLed.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_5;
+      |          ^
+../driver/src/gpio_config.c:14:43: error: 'GPIO_PIN_NO_5' undeclared (first use in this function); did you mean 'GPIO_PIN_SET'?
+   14 |   GpioLed.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_5;
+      |                                           ^~~~~~~~~~~~~
+      |                                           GPIO_PIN_SET
+../driver/src/gpio_config.c:14:43: note: each undeclared identifier is reported only once for each function it appears in
+../driver/src/gpio_config.c:15:10: error: request for member 'GPIO_PinConfig' in something not a structure or union
+   15 |   GpioLed.GPIO_PinConfig.GPIO_PinMode = GPIO_MODE_OUT;
+      |          ^
+../driver/src/gpio_config.c:15:41: error: 'GPIO_MODE_OUT' undeclared (first use in this function)
+   15 |   GpioLed.GPIO_PinConfig.GPIO_PinMode = GPIO_MODE_OUT;
+      |                                         ^~~~~~~~~~~~~
+../driver/src/gpio_config.c:16:10: error: request for member 'GPIO_PinConfig' in something not a structure or union
+   16 |   GpioLed.GPIO_PinConfig.GPIO_PinSpeed= GPIO_SPEED_LOW;
+      |          ^
+../driver/src/gpio_config.c:16:41: error: 'GPIO_SPEED_LOW' undeclared (first use in this function)
+   16 |   GpioLed.GPIO_PinConfig.GPIO_PinSpeed= GPIO_SPEED_LOW;
+      |                                         ^~~~~~~~~~~~~~
+../driver/src/gpio_config.c:17:10: error: request for member 'GPIO_PinConfig' in something not a structure or union
+   17 |   GpioLed.GPIO_PinConfig.GPIO_PinOPType = GPIO_OP_TYPE_PP;
+      |          ^
+../driver/src/gpio_config.c:17:43: error: 'GPIO_OP_TYPE_PP' undeclared (first use in this function)
+   17 |   GpioLed.GPIO_PinConfig.GPIO_PinOPType = GPIO_OP_TYPE_PP;
+      |                                           ^~~~~~~~~~~~~~~
+../driver/src/gpio_config.c:18:10: error: request for member 'GPIO_PinConfig' in something not a structure or union
+   18 |   GpioLed.GPIO_PinConfig.GPIO_PinPuPdControl = GPIO_NO_PUPD;
+      |          ^
+../driver/src/gpio_config.c:18:48: error: 'GPIO_NO_PUPD' undeclared (first use in this function)
+   18 |   GpioLed.GPIO_PinConfig.GPIO_PinPuPdControl = GPIO_NO_PUPD;
+      |                                                ^~~~~~~~~~~~
+../driver/src/gpio_config.c:20:3: warning: implicit declaration of function 'Gpio_PerClkEnable' [-Wimplicit-function-declaration]
+   20 |   Gpio_PerClkEnable(GPIOA , ENABLE);
+      |   ^~~~~~~~~~~~~~~~~
+../driver/src/gpio_config.c:22:3: warning: implicit declaration of function 'Gpio_Init' [-Wimplicit-function-declaration]
+   22 |   Gpio_Init(&GpioLed);
+      |   ^~~~~~~~~
+make: *** [driver/src/subdir.mk:22: driver/src/gpio_config.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+09:33:29 Build Failed. 14 errors, 3 warnings. (took 2s.288ms)
+

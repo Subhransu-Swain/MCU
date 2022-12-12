@@ -1,0 +1,10 @@
+16:50:46 **** Build of configuration Debug for project UART2_Rx_LCD ****
+make -j12 all 
+arm-none-eabi-size   UART2_Rx_LCD.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11536	     20	   1636	  13192	   3388	UART2_Rx_LCD.elf
+Finished building: default.size.stdout
+ 
+
+16:50:46 Build Finished. 0 errors, 0 warnings. (took 212ms)
+

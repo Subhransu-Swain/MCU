@@ -1,0 +1,6 @@
+"./Src/gpio_config.o"
+"./Src/main.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32f411retx.o"
+"./drivers/src/stm32f411_driver_gpio.o"

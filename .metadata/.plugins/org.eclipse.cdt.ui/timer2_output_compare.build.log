@@ -1,0 +1,10 @@
+10:47:38 **** Incremental Build of configuration Debug for project timer2_output_compare ****
+make -j12 all 
+arm-none-eabi-size   timer2_output_compare.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9876	     20	   1644	  11540	   2d14	timer2_output_compare.elf
+Finished building: default.size.stdout
+ 
+
+10:47:39 Build Finished. 0 errors, 0 warnings. (took 201ms)
+

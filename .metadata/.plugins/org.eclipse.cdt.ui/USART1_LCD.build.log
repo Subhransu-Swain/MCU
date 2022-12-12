@@ -1,0 +1,10 @@
+11:46:33 **** Build of configuration Debug for project USART1_LCD ****
+make -j12 all 
+arm-none-eabi-size   USART1_LCD.elf 
+   text	   data	    bss	    dec	    hex	filename
+    960	      8	   1568	   2536	    9e8	USART1_LCD.elf
+Finished building: default.size.stdout
+ 
+
+11:46:33 Build Finished. 0 errors, 0 warnings. (took 216ms)
+

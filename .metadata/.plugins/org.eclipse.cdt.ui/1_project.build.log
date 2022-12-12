@@ -1,0 +1,10 @@
+11:46:29 **** Build of configuration Debug for project 1_project ****
+make -j12 all 
+arm-none-eabi-size   1_project.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5292	    108	   1588	   6988	   1b4c	1_project.elf
+Finished building: default.size.stdout
+ 
+
+11:46:29 Build Finished. 0 errors, 0 warnings. (took 147ms)
+

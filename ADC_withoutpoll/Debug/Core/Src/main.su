@@ -1,0 +1,12 @@
+../Core/Inc/lcd.h:46:6:LCD_string	24	static
+../Core/Inc/lcd.h:55:6:LCD_init	8	static
+../Core/Inc/lcd.h:73:6:PORTS_init	4	static
+../Core/Inc/lcd.h:87:6:LCD_nibble_write	16	static,ignoring_inline_asm
+../Core/Inc/lcd.h:102:6:LCD_command	16	static
+../Core/Inc/lcd.h:112:6:LCD_data	16	static
+../Core/Inc/lcd.h:118:6:delay	24	static
+../Core/Src/main.c:66:5:main	40	static
+../Core/Src/main.c:131:6:SystemClock_Config	88	static
+../Core/Src/main.c:173:13:MX_ADC1_Init	24	static
+../Core/Src/main.c:225:13:MX_GPIO_Init	48	static
+../Core/Src/main.c:247:6:Error_Handler	4	static,ignoring_inline_asm

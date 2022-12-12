@@ -1,0 +1,10 @@
+16:51:09 **** Build of configuration Debug for project interrupt_LCD_2 ****
+make -j12 all 
+arm-none-eabi-size   interrupt_LCD_2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11188	     24	   1696	  12908	   326c	interrupt_LCD_2.elf
+Finished building: default.size.stdout
+ 
+
+16:51:09 Build Finished. 0 errors, 0 warnings. (took 213ms)
+
